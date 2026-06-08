@@ -12,7 +12,7 @@ const labelStyle = {
 
 export function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | loading | success | error
+  const [status, setStatus] = useState('idle')
 
   const set = (k, v) => setForm(prev => ({ ...prev, [k]: v }))
 
@@ -37,7 +37,7 @@ export function Contact() {
     <section id="contact" className="section section-steel">
       <div className="section-tag">Get in Touch</div>
       <h2 className="section-title">Contact Forte Shutters</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start', marginTop: '3rem' }}>
+      <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start', marginTop: '3rem' }}>
         <div>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '1.5rem' }}>Thika Headquarters</h3>
           {[
@@ -61,6 +61,20 @@ export function Contact() {
               <div style={{ fontSize: '0.85rem', color: 'var(--gold-light)', marginTop: 2 }}>24/7 emergency call-out available</div>
             </div>
           </div>
+          {/* WhatsApp button */}
+          <a
+            href="https://wa.me/254700000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
+              marginTop: '1.5rem', background: '#25D366', color: '#000',
+              padding: '14px 24px', borderRadius: 4, textDecoration: 'none',
+              fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '0.95rem',
+            }}
+          >
+            <span style={{ fontSize: '1.2rem' }}>💬</span> Chat on WhatsApp
+          </a>
         </div>
         <div>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '1.5rem' }}>Send a Message</h3>
@@ -105,20 +119,18 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer style={{
-      background: '#0A0B0D', padding: '3rem 5%',
-      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-      borderTop: '1px solid var(--border)', flexWrap: 'wrap', gap: '1rem',
-    }}>
-      <div>
-        <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 800, color: '#fff' }}>
-          FORTE<span style={{ color: 'var(--gold-light)' }}>.</span> SHUTTERS
+    <footer style={{ background: '#0A0B0D', padding: '3rem 5%', borderTop: '1px solid var(--border)' }}>
+      <div className="footer-inner" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+        <div>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 800, color: '#fff' }}>
+            FORTE<span style={{ color: 'var(--gold-light)' }}>.</span> SHUTTERS
+          </div>
+          <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: 4 }}>Premium Security Solutions · Thika, Kenya</div>
         </div>
-        <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: 4 }}>Premium Security Solutions · Thika, Kenya</div>
-      </div>
-      <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textAlign: 'right' }}>
-        Serving Nairobi · Thika · Mombasa · and beyond<br />
-        © {new Date().getFullYear()} Forte Shutters. All rights reserved.
+        <div style={{ fontSize: '0.8rem', color: 'var(--muted)', textAlign: 'right' }}>
+          Serving Nairobi · Thika · Mombasa · and beyond<br />
+          © {new Date().getFullYear()} Forte Shutters. All rights reserved.
+        </div>
       </div>
     </footer>
   )
