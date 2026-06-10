@@ -13,8 +13,8 @@ export function SecurityShutterSVG() {
         </g>
       ))}
       {/* Lock mechanism */}
-      <rect x="88" y="60" width="24" height="16" rx="2" fill="#D4920A" opacity="0.9"/>
-      <rect x="93" y="55" width="14" height="8" rx="7" fill="none" stroke="#D4920A" strokeWidth="2"/>
+      <rect x="88" y="60" width="24" height="16" rx="2" fill="var(--mustard)" opacity="0.9"/>
+      <rect x="93" y="55" width="14" height="8" rx="7" fill="none" stroke="var(--mustard)" strokeWidth="2"/>
       <circle cx="100" cy="68" r="2" fill="#111214"/>
       {/* Guide rails */}
       <rect x="10" y="10" width="6" height="125" fill="#1C2028" stroke="#3A3F48" strokeWidth="0.5"/>
@@ -22,7 +22,7 @@ export function SecurityShutterSVG() {
       {/* Top box */}
       <rect x="10" y="10" width="180" height="12" rx="2" fill="#1C2028" stroke="#3A3F48" strokeWidth="0.5"/>
       {/* Gold accent line */}
-      <rect x="10" y="10" width="180" height="2" rx="1" fill="#D4920A" opacity="0.8"/>
+      <rect x="10" y="10" width="180" height="2" rx="1" fill="var(--mustard)" opacity="0.8"/>
     </svg>
   )
 }
@@ -34,7 +34,7 @@ export function ShopFrontSVG() {
       <rect x="5" y="5" width="190" height="130" rx="2" fill="none" stroke="#3A3F48" strokeWidth="1.5"/>
       {/* Fascia board */}
       <rect x="5" y="5" width="190" height="25" fill="#1C2028" stroke="#3A3F48" strokeWidth="0.5"/>
-      <text x="100" y="22" textAnchor="middle" fill="#D4920A" fontSize="9" fontFamily="sans-serif" letterSpacing="2" fontWeight="bold">FORTE SHOP</text>
+      <text x="100" y="22" textAnchor="middle" fill="var(--mustard)" fontSize="9" fontFamily="sans-serif" letterSpacing="2" fontWeight="bold">FORTE SHOP</text>
       {/* Perforated shutter - half open */}
       {[32,42,52,62,72,82].map((y, i) => (
         <g key={i}>
@@ -53,7 +53,7 @@ export function ShopFrontSVG() {
       {/* Roller box */}
       <rect x="10" y="30" width="180" height="6" fill="#161920" stroke="#3A3F48" strokeWidth="0.5"/>
       {/* Gold line */}
-      <rect x="5" y="5" width="190" height="2" fill="#D4920A" opacity="0.8"/>
+      <rect x="5" y="5" width="190" height="2" fill="var(--mustard)" opacity="0.8"/>
     </svg>
   )
 }
@@ -79,16 +79,16 @@ export function GarageSVG() {
         </g>
       ))}
       {/* Motor unit on ceiling */}
-      <rect x="85" y="62" width="30" height="8" rx="2" fill="#D4920A" opacity="0.7"/>
-      <line x1="100" y1="70" x2="100" y2="72" stroke="#D4920A" strokeWidth="1.5"/>
+      <rect x="85" y="62" width="30" height="8" rx="2" fill="var(--mustard)" opacity="0.7"/>
+      <line x1="100" y1="70" x2="100" y2="72" stroke="var(--mustard)" strokeWidth="1.5"/>
       {/* Remote signal */}
-      <path d="M 160 78 Q 165 74 170 78" fill="none" stroke="#D4920A" strokeWidth="1.5" opacity="0.6"/>
-      <path d="M 158 74 Q 165 68 172 74" fill="none" stroke="#D4920A" strokeWidth="1" opacity="0.4"/>
+      <path d="M 160 78 Q 165 74 170 78" fill="none" stroke="var(--mustard)" strokeWidth="1.5" opacity="0.6"/>
+      <path d="M 158 74 Q 165 68 172 74" fill="none" stroke="var(--mustard)" strokeWidth="1" opacity="0.4"/>
       {/* Guide rails */}
       <line x1="35" y1="72" x2="35" y2="127" stroke="#3D4450" strokeWidth="2"/>
       <line x1="165" y1="72" x2="165" y2="127" stroke="#3D4450" strokeWidth="2"/>
       {/* Gold accent */}
-      <line x1="35" y1="72" x2="165" y2="72" stroke="#D4920A" strokeWidth="1.5" opacity="0.8"/>
+      <line x1="35" y1="72" x2="165" y2="72" stroke="var(--mustard)" strokeWidth="1.5" opacity="0.8"/>
     </svg>
   )
 }
@@ -115,16 +115,16 @@ export function IndustrialSVG() {
       {/* Rail bolts */}
       {[25, 55, 85, 115].map((y, i) => (
         <g key={i}>
-          <circle cx="10" cy={y} r="2.5" fill="#3D4450" stroke="#D4920A" strokeWidth="0.5"/>
-          <circle cx="190" cy={y} r="2.5" fill="#3D4450" stroke="#D4920A" strokeWidth="0.5"/>
+          <circle cx="10" cy={y} r="2.5" fill="#3D4450" stroke="var(--mustard)" strokeWidth="0.5"/>
+          <circle cx="190" cy={y} r="2.5" fill="#3D4450" stroke="var(--mustard)" strokeWidth="0.5"/>
         </g>
       ))}
       {/* Motor housing - large industrial */}
-      <rect x="70" y="8" width="60" height="14" rx="2" fill="#1C2028" stroke="#D4920A" strokeWidth="1" opacity="0.9"/>
-      <rect x="95" y="11" width="10" height="8" rx="1" fill="#D4920A" opacity="0.6"/>
-      <text x="100" y="19" textAnchor="middle" fill="#D4920A" fontSize="5" fontFamily="sans-serif" opacity="0.9">3-PHASE</text>
+      <rect x="70" y="8" width="60" height="14" rx="2" fill="#1C2028" stroke="var(--mustard)" strokeWidth="1" opacity="0.9"/>
+      <rect x="95" y="11" width="10" height="8" rx="1" fill="var(--mustard)" opacity="0.6"/>
+      <text x="100" y="19" textAnchor="middle" fill="var(--mustard)" fontSize="5" fontFamily="sans-serif" opacity="0.9">3-PHASE</text>
       {/* Gold top accent */}
-      <rect x="5" y="8" width="190" height="3" fill="#D4920A" opacity="0.7"/>
+      <rect x="5" y="8" width="190" height="3" fill="var(--mustard)" opacity="0.7"/>
     </svg>
   )
 }
@@ -137,11 +137,11 @@ export function ElectricGateSVG() {
       {/* Left pillar */}
       <rect x="8" y="30" width="22" height="98" rx="2" fill="#1C2028" stroke="#3A3F48" strokeWidth="1"/>
       <rect x="6" y="28" width="26" height="8" rx="1" fill="#23272E" stroke="#3A3F48" strokeWidth="0.5"/>
-      <rect x="6" y="22" width="26" height="8" rx="1" fill="#D4920A" opacity="0.7"/>
+      <rect x="6" y="22" width="26" height="8" rx="1" fill="var(--mustard)" opacity="0.7"/>
       {/* Right pillar */}
       <rect x="170" y="30" width="22" height="98" rx="2" fill="#1C2028" stroke="#3A3F48" strokeWidth="1"/>
       <rect x="168" y="28" width="26" height="8" rx="1" fill="#23272E" stroke="#3A3F48" strokeWidth="0.5"/>
-      <rect x="168" y="22" width="26" height="8" rx="1" fill="#D4920A" opacity="0.7"/>
+      <rect x="168" y="22" width="26" height="8" rx="1" fill="var(--mustard)" opacity="0.7"/>
       {/* Left gate panel - sliding open slightly */}
       <rect x="30" y="38" width="65" height="82" rx="1" fill="#23272E" stroke="#3D4450" strokeWidth="0.8"/>
       {/* Gate vertical bars */}
@@ -161,13 +161,13 @@ export function ElectricGateSVG() {
       <rect x="105" y="76" width="65" height="5" rx="1" fill="#2A2F37" stroke="#3D4450" strokeWidth="0.5"/>
       <rect x="105" y="106" width="65" height="5" rx="1" fill="#2A2F37" stroke="#3D4450" strokeWidth="0.5"/>
       {/* Motor box on left pillar */}
-      <rect x="10" y="85" width="18" height="22" rx="2" fill="#161920" stroke="#D4920A" strokeWidth="0.8"/>
-      <circle cx="19" cy="96" r="4" fill="none" stroke="#D4920A" strokeWidth="1"/>
-      <circle cx="19" cy="96" r="1.5" fill="#D4920A"/>
+      <rect x="10" y="85" width="18" height="22" rx="2" fill="#161920" stroke="var(--mustard)" strokeWidth="0.8"/>
+      <circle cx="19" cy="96" r="4" fill="none" stroke="var(--mustard)" strokeWidth="1"/>
+      <circle cx="19" cy="96" r="1.5" fill="var(--mustard)"/>
       {/* Signal waves */}
-      <path d="M 175 60 Q 182 55 175 50" fill="none" stroke="#D4920A" strokeWidth="1.5" opacity="0.8"/>
-      <path d="M 177 63 Q 187 55 177 47" fill="none" stroke="#D4920A" strokeWidth="1" opacity="0.5"/>
-      <circle cx="174" cy="56" r="2" fill="#D4920A" opacity="0.9"/>
+      <path d="M 175 60 Q 182 55 175 50" fill="none" stroke="var(--mustard)" strokeWidth="1.5" opacity="0.8"/>
+      <path d="M 177 63 Q 187 55 177 47" fill="none" stroke="var(--mustard)" strokeWidth="1" opacity="0.5"/>
+      <circle cx="174" cy="56" r="2" fill="var(--mustard)" opacity="0.9"/>
     </svg>
   )
 }
@@ -204,10 +204,10 @@ export function WindowShutterSVG() {
       <rect x="162" y="15" width="8" height="110" fill="#1C2028" stroke="#3A3F48" strokeWidth="0.5"/>
       {/* Top roller box */}
       <rect x="28" y="10" width="144" height="10" rx="2" fill="#1C2028" stroke="#3A3F48" strokeWidth="1"/>
-      <rect x="28" y="10" width="144" height="3" rx="1" fill="#D4920A" opacity="0.7"/>
+      <rect x="28" y="10" width="144" height="3" rx="1" fill="var(--mustard)" opacity="0.7"/>
       {/* Pull strap */}
-      <rect x="97" y="110" width="6" height="12" rx="3" fill="#D4920A" opacity="0.5"/>
-      <rect x="95" y="120" width="10" height="4" rx="2" fill="#D4920A" opacity="0.6"/>
+      <rect x="97" y="110" width="6" height="12" rx="3" fill="var(--mustard)" opacity="0.5"/>
+      <rect x="95" y="120" width="10" height="4" rx="2" fill="var(--mustard)" opacity="0.6"/>
     </svg>
   )
 }
